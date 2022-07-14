@@ -1,22 +1,24 @@
 <div class="container">
-    <div class="output"></div>
+    <h1 style="text-align: center;">Angular Calculator</h1>
+    <div class="output"><input id="input" #input (keyup.enter)="calcValue(input.value)" placeholder="0" [(ngModel)]="Answer"></div>
     <hr>
     <div class="calcGrid">
-        <div class="gridcell1"><button>1</button></div>
-        <div class="gridcell2"><button>2</button></div>
-        <div class="gridcell3"><button>3</button></div>
-        <div class="gridcell4"><button>4</button></div>
-        <div class="gridcell5"><button>5</button></div>
-        <div class="gridcell6"><button>6</button></div>
-        <div class="gridcell7"><button>7</button></div>
-        <div class="gridcell8"><button>8</button></div>
-        <div class="gridcell9"><button>9</button></div>
-        <div class="gridcell10"><button>10</button></div>
-        <div class="gridcell11"><button>11</button></div>
-        <div class="gridcell12"><button>12</button></div>
-        <div class="gridcell13"><button>13</button></div>
-        <div class="gridcell14"><button>14</button></div>
-        <div class="gridcell15"><button>15</button></div>
-        <div class="gridcell16"><button>16</button></div>
+        <button class="btn1" (click)="num($event)" value="7">7</button>
+        <button class="btn1" (click)="num($event)" value="8">8</button>
+        <button class="btn1" (click)="num($event)" value="9">9</button>
+        <button class="btn1" (click)="refresh()">C</button>
+        <button class="btn1" (click)="num($event)" value="4">4</button>
+        <button class="btn1" (click)="num($event)" value="5">5</button>
+        <button class="btn1" (click)="num($event)" value="6">6</button>
+        <button class="btn1" (click)="num($event)" value="/">/</button>
+        <button class="btn1" (click)="num($event)" value="1">1</button>
+        <button class="btn1" (click)="num($event)" value="2">2</button>
+        <button class="btn1" (click)="num($event)" value="3">3</button>
+        <button class="btn1" (click)="num($event)" value="*">*</button>
+        <button class="btn1" (click)="num($event)" value="0">0</button>
+        <button class="btn1" (click)="num($event)" value=".">.</button>
+        <button class="btn1" (click)="num($event)" value="-">-</button>
+        <button class="btn1" (click)="num($event)" value="+">+</button>
+        <button class="btn1" id="equal" (click)="equal()">=</button>
     </div>
 </div>
