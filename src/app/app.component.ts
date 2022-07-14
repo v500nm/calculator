@@ -16,7 +16,7 @@ export class AppComponent {
     this.Answer=eval(this.Answer)
   }
   refresh(){
-    this.Answer=''
+    this.Answer=window.location.reload();
   }
   calcValue(solve:any){
     this.Answer=eval(solve)
